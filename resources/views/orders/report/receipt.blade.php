@@ -82,7 +82,7 @@
             $totalPrice += $row->price;
             $totalQty += $row->qty;
             $total += $row->price * $row->qty;
-            $kembali = $total - $order->paid;
+            $kembali = $order->paid - $total;
         @endphp
     @empty
         <tr>
